@@ -1,0 +1,216 @@
+  /* <!-- FUENTE DE GOOGLE FONT --> */
+  @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+  /* ---------------------------------- */
+
+/* IMPORTAR BS */
+@import "./bs_scss/bootstrap.scss";
+
+
+/*------------ PAGINAS--------- */
+/* Pagina Index */
+@import "_style-index";
+ /* Paginas Tratamientos */
+ @import "_style-tratamientos";
+ /* Paginas Productos */
+ @import "_style-productos";
+ /* Paginas  Sobre Mi*/
+ @import "_style-sobremi";
+ /* Paginas Contacto */
+ @import "_style-contacto";
+/*------ FIN PAGINAS--------- */
+
+/* MEDIAS QUERIES */
+@import "_style-mediaqueries";
+/* FIN MEDIAS QUERIES */
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*.................................... ETIQUETAS ESTILOS ......................................................*/
+.borderPrueba {
+  border: solid 2px black;
+}
+.mgPorNav{
+  margin-top: 91px;
+}
+
+body {
+  background-image: url(../image/pink_rice.png);  
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Fjalla One", sans-serif;
+  color: #ff5ba5;
+}
+h3{
+  font-size: 120%;
+}
+
+p {
+  color: gray;
+  font-size: 90%;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Patrick Hand', cursive;
+}
+
+table {
+  border-collapse: collapse;
+}
+tr {
+  background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
+  border: 3px solid #ff5ba5;
+}
+th {
+  border: 3px solid #ff5ba5;
+}
+td {
+  border: 3px solid #ff5ba5;
+}
+
+footer {
+  text-align: center;
+  background-color: #fad2e1;
+  background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
+  color: black;
+}
+
+.imgRedonda {
+  width:20%;
+  height:20%;
+  border-radius:100%;
+}
+/*---------------------------------- CSS PARA BS ------------------------------------------------ */
+
+.colorTitleCarrusel {
+  color: #ff5ba5;
+  font-weight: 900;
+  font-size: 240%;
+}
+.colorSubitleCarrusel {
+  color: #ff5ba5;
+  font-weight: 900;
+}
+.imgCard{
+  width: 100%;
+}
+.navColor{
+  background-color: #fad2e1!important;
+}
+.bg-rosa{
+  background-color: #ff5ba5!important;
+}
+/*........................... CLASES ESTILOS...................................... */
+
+.imgFloat {
+  float: right;
+}
+
+.responsiveIframe{
+  position: relative;
+  padding-top: 56.25%;
+}
+.responsiveIframe__iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/*------------------------------------ TABLET-------------------------------------------*/
+@media (min-width: 600px) and (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+  nav {
+    background-color: #fad2e1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse;
+    width: 550px;
+    margin-left: 50px;
+    border: 3px solid #ff5ba5;
+  }
+  .btn-wsp{
+    width:63px;
+    height:63px;
+    line-height: 66px;
+}
+}
+
+
+/*------------------------------------ DESKTOP ---------------------------------------------------*/
+@media (min-width: 1025px) {
+  body {
+    background-color: blue;
+  }
+
+  nav {
+    background-color: #fad2e1;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse;
+    width: 550px;
+    border: 3px solid #ff5ba5;
+  }
+
+.w-100{
+height: 500px;
+}
+}
+/* ---------------------------------------- ANIMATION ------------------------------------ */
+
+.shadow-drop-tr {
+  -webkit-animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-drop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    -webkit-box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-tr {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 transparent;
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    -webkit-box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+/* -----------------------------------TRANSICION */ /* ROTACION----------------------------------- */
+.trans-foot:hover {
+  transition: 2s;
+  font-size: 2rem;
+  transform: rotate(360deg);
+}
+.sCale:hover {
+  transform: scale(1.1, 1.1);
+}

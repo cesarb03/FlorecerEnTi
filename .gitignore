@@ -1,0 +1,8 @@
+#Ignorar carpetas
+
+node_modules
+
+#Ignorar arvhivos
+package-lock.json
+package.json
+.DS_store
