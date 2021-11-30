@@ -7880,17 +7880,20 @@ footer {
 .colorTitleCarrusel {
   /* color: #ff5ba5; */
   color: #fad2e1;
-  font-weight: 900;
-  font-size: 150%;
+  font-weight: 900 !important;
+  font-size: 155%;
   margin-bottom: 0px !important; }
 
 .translate-middle-x {
-  transform: translateX(0%) !important; }
+  transform: translate(-25%, 0%) !important; }
+
+.translate-middle {
+  transform: translate(-50%, 0%) !important; }
 
 .colorSubitleCarrusel {
   color: #fad2e1;
   font-weight: 900;
-  font-size: 100%; }
+  font-size: 80%; }
 
 .imgCard {
   width: 100%; }
@@ -7944,7 +7947,9 @@ footer {
     color: #fad2e1;
     font-weight: 900; }
   .translate-middle-x {
-    transform: translateX(-50%) !important; } }
+    transform: translateX(-50%) !important; }
+  .translate-middle {
+    transform: translate(-50%, -50%) !important; } }
 
 /*------------------------------------ DESKTOP ---------------------------------------------------*/
 @media (min-width: 1025px) {
@@ -7971,7 +7976,9 @@ footer {
     color: #fad2e1;
     font-weight: 900; }
   .translate-middle-x {
-    transform: translateX(-50%) !important; } }
+    transform: translateX(-50%) !important; }
+  .translate-middle {
+    transform: translate(-50%, -50%) !important; } }
 
 /* ---------------------------------------- ANIMATION ------------------------------------ */
 .shadow-drop-tr {
