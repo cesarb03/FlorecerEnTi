@@ -8,13 +8,7 @@
   padding: 0;
 }
 
-
 /*.................................... ETIQUETAS ESTILOS ......................................................*/
-
-.mgPorNav{
-  margin-top: 91px;
-}
-
 body {
   background-image: url(../image/pink_rice.png);  
 }
@@ -59,11 +53,6 @@ footer {
   color: black;
 }
 
-.imgRedonda {
-  width:20%;
-  height:20%;
-  border-radius:100%;
-}
 /*---------------------------------- CSS PARA BS ------------------------------------------------ */
 
 .colorTitleCarrusel {
@@ -93,12 +82,12 @@ footer {
 .bg-rosa{
   background-color: #ff5ba5!important;
 }
+
 /*........................... CLASES ESTILOS...................................... */
 
 .imgFloat {
   float: right;
 }
-
 .responsiveIframe{
   position: relative;
   padding-top: 56.25%;
@@ -110,7 +99,14 @@ footer {
   width: 100%;
   height: 100%;
 }
-
+.imgRedonda {
+  width:20%;
+  height:20%;
+  border-radius:100%;
+}
+.mgPorNav{
+  margin-top: 91px;
+}
 
 /*------------------------------------ TABLET-------------------------------------------*/
 @media (min-width: 600px) and (max-width: 1024px) {
