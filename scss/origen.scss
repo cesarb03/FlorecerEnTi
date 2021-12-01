@@ -3,28 +3,6 @@
   @import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
   /* ---------------------------------- */
 
-/* IMPORTAR BS */
-@import "./bs_scss/bootstrap.scss";
-
-
-/*------------ PAGINAS--------- */
-/* Pagina Index */
-@import "_style-index";
- /* Paginas Tratamientos */
- @import "_style-tratamientos";
- /* Paginas Productos */
- @import "_style-productos";
- /* Paginas  Sobre Mi*/
- @import "_style-sobremi";
- /* Paginas Contacto */
- @import "_style-contacto";
-/*------ FIN PAGINAS--------- */
-
-/* MEDIAS QUERIES */
-@import "_style-mediaqueries";
-/* FIN MEDIAS QUERIES */
-
-
 * {
   margin: 0;
   padding: 0;
