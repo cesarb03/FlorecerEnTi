@@ -99,9 +99,11 @@ footer {
   height: 100%;
 }
 .imgRedonda {
-  width:20%;
-  height:20%;
-  border-radius:100%;
+  width:60%;
+  height:60%;
+ /*  border-radius:100%; */
+ -webkit-clip-path: circle(70% at 70% 20%);
+ clip-path: circle(70% at 70% 20%);
 }
 .mgPorNav{
   margin-top: 91px;
@@ -139,11 +141,15 @@ footer {
   color: #fad2e1;
   font-weight: 900;
 }
-.translate-middle-x{
-  transform: translateX(-50%) !important;
-}
+
 .translate-middle {
   transform: translate(-50%, -50%) !important;
+}
+.imgRedonda {
+  width:20%;
+  height:20%;
+  -webkit-clip-path: circle(70% at 70% 20%);
+  clip-path: circle(70% at 70% 20%);
 }
 }
 
@@ -179,11 +185,14 @@ height: 500px;
   color: #fad2e1;
   font-weight: 900;
 }
-.translate-middle-x{
-  transform: translateX(-50%) !important;
-}
 .translate-middle {
   transform: translate(-50%, -50%) !important;
+}
+.imgRedonda {
+  width:20%;
+  height:20%;
+  -webkit-clip-path: circle(70% at 70% 20%);
+  clip-path: circle(70% at 70% 20%);
 }
 }
 /* ---------------------------------------- ANIMATION ------------------------------------ */
