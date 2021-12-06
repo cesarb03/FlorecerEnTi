@@ -9,8 +9,14 @@
 }
 
 /*.................................... ETIQUETAS ESTILOS ......................................................*/
+html{
+  height: 100%;
+}
 body {
   background-image: url(../image/pink_rice.png);  
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 h1,
@@ -51,6 +57,7 @@ footer {
   background-color: #fad2e1;
   background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
   color: black;
+  margin-top: auto;
 }
 
 /*---------------------------------- CSS PARA BS ------------------------------------------------ */

@@ -7,8 +7,14 @@
   padding: 0; }
 
 /*.................................... ETIQUETAS ESTILOS ......................................................*/
+html {
+  height: 100%; }
+
 body {
-  background-image: url(../image/pink_rice.png); }
+  background-image: url(../image/pink_rice.png);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
 
 h1,
 h2,
@@ -44,7 +50,8 @@ footer {
   text-align: center;
   background-color: #fad2e1;
   background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
-  color: black; }
+  color: black;
+  margin-top: auto; }
 
 /*---------------------------------- CSS PARA BS ------------------------------------------------ */
 .colorTitleCarrusel {
