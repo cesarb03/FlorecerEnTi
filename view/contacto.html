@@ -89,36 +89,38 @@
     <div class="container mgPorNav pt-3">
         <h1 class="text-center">Formulario</h1>
         <div class="row d-flex justify-content-center">
-            <div class="col-10 col-lg-6 border-form mb-5">
-                <form action="">
+            <div class="col-10 col-lg-6 mb-5 borderForm">
+                <form action="borderForm">
                     <fieldset class="">
-                        <legend>Info Personal</legend>
+                        <legend class="negrita centrado pt-3">Información Personal</legend>
+                        <div class="ms-5 mb-3 pt-3">
                         <label>Nombre Completo: </label>
                         <input type="text" name="Nombre" placeholder="Nombre y Apellido"><br>
-                        <label>Teléfono: </label>
-                        <input type="tel" name="Teléfono" placeholder="Teléfono"><br>
-                        <label>Domicilio: </label>
-                        <input type="text" name="Domicilio" placeholder="Domicilio"><br>
-                        <label>Correo: </label>
-                        <input type="email" name="Correo" placeholder="Correo"><br>
-                        <span>Sexo</span>
-                        <select name="sexo">
-                            <option value="masculino">Masculino</option>
-                            <option value="femenino">Femenino</option>
-                            <option value="nb">NB</option>
-                        </select><br><br>
-                        <span>Tipo de Consulta: </span><br>
-                        <label>Nutrición</label>
-                        <input type="radio" name="tratamiento" value="nutrición" />
-                        <label>Cosmiatría</label>
-                        <input type="radio" name="tratamiento" value="cosmiatría" /><br><br>
-                        <label>Tildar si sos mayor de edad +18 </label>
-                        <input type="checkbox" name="acepta" value="1" /><br><br>
-                        <label>Tu consulta: </label><br>
-                        <textarea name="Comentarios" cols="30" rows="10"
-                            placeholder="Contanos el motivo de tu consulta..."></textarea><br><br>
+                            <label>Teléfono: </label>
+                            <input type="tel" name="Teléfono" placeholder="Teléfono"><br>
+                            <label>Domicilio: </label>
+                            <input type="text" name="Domicilio" placeholder="Domicilio"><br>
+                            <label>Correo: </label>
+                            <input type="email" name="Correo" placeholder="Correo"><br>
+                            <span>Sexo</span>
+                            <select name="sexo">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="nb">NB</option>
+                            </select><br><br>
+                            <span>Tipo de Consulta: </span><br>
+                            <label>Nutrición</label>
+                            <input type="radio" name="tratamiento" value="nutrición" />
+                            <label>Cosmiatría</label>
+                            <input type="radio" name="tratamiento" value="cosmiatría" /><br><br>
+                            <label>Tildar si sos mayor de edad +18 </label>
+                            <input type="checkbox" name="acepta" value="1" /><br><br>
+                            <label>Tu consulta: </label><br>
+                            <textarea name="Comentarios" cols="30" rows="5" class="textareaBox"
+                                placeholder="Contanos el motivo de tu consulta..."></textarea><br><br>
                         <input type="submit" value="Enviar formulario" />
                         <input type="reset" value="Limpiar formulario" />
+                    </div>
                     </fieldset>
                 </form>
             </div>

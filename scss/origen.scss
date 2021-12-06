@@ -60,6 +60,13 @@ footer {
   margin-top: auto;
 }
 
+.centrado{
+  text-align: center;
+}
+.negrita{
+  font-weight: bold;
+}
+
 /*---------------------------------- CSS PARA BS ------------------------------------------------ */
 
 .colorTitleCarrusel {
@@ -115,7 +122,12 @@ footer {
 .mgPorNav{
   margin-top: 91px;
 }
-
+.borderForm{
+  border: solid 3px #ff5ba5
+}
+.textareaBox {
+  width: 90%;
+}
 /*------------------------------------ TABLET-------------------------------------------*/
 @media (min-width: 600px) and (max-width: 1024px) {
   body {
