@@ -49,15 +49,16 @@ footer {
 /*---------------------------------- CSS PARA BS ------------------------------------------------ */
 .colorTitleCarrusel {
   color: #ff5ba5;
-  /*   color: #fad2e1; */
   font-weight: 900 !important;
   font-size: 155%;
   margin-bottom: 0px !important;
   -webkit-text-stroke: .09px #fff; }
 
+.translate-middle {
+  transform: translate(-50%, 0%) !important; }
+
 .colorSubitleCarrusel {
   color: #ff5ba5;
-  /* color: #fad2e1; */
   font-weight: 900;
   font-size: 80%;
   -webkit-text-stroke: .09px #fff; }
