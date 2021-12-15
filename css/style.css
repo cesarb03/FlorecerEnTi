@@ -90,6 +90,9 @@ footer {
 
 .bg-rosa {
   background-color: #ff5ba5 !important; }
+.text-rosa{
+  color: #ff5ba5;
+}
 
 /*........................... CLASES ESTILOS...................................... */
 .imgFloat {
@@ -114,7 +117,7 @@ footer {
   clip-path: circle(70% at 70% 20%); }
 
 .mgPorNav {
-  margin-top: 91px; }
+  margin-top: 75px; }
 
 .borderForm {
   border: solid 3px #ff5ba5; }
