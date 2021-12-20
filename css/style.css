@@ -2,240 +2,335 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
 /* ---------------------------------- */
+
+
+/* ############################################ */
+/* ########### GENERAL STYLES START ########### */
+/* ############################################ */
+
+
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
-/*.................................... ETIQUETAS ESTILOS ......................................................*/
+/* ***************************** LABELS *******************************/
 html {
-  height: 100%; }
+  height: 100%;
+}
 
 body {
   background-image: url(../image/pink_rice.png);
   display: flex;
   flex-direction: column;
-  min-height: 100%; }
+  min-height: 100%;
+}
 
-h1,
-h2,
-h3,
-h4 {
+h1{
+  /* text-shadow: #ff5ba5 0.1em -0.1em 0.2em; */
+  text-shadow: #ff5ba5 2px -1px 3px;
+}
+
+h1, h2, h3, h4 {
   font-family: "Fjalla One", sans-serif;
-  color: #ff5ba5; }
+  color: #ff5ba5;
+}
 
 h3 {
-  font-size: 120%; }
+  font-size: 120%;
+}
 
 p {
   color: gray;
   font-size: 90%;
   font-weight: bold;
   letter-spacing: 1px;
-  font-family: 'Patrick Hand', cursive; }
-
-table {
-  border-collapse: collapse; }
-
-tr {
-  background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
-  border: 3px solid #ff5ba5; }
-
-th {
-  border: 3px solid #ff5ba5; }
-
-td {
-  border: 3px solid #ff5ba5; }
+  font-family: "Patrick Hand", cursive;
+}
 
 footer {
   text-align: center;
   background-color: #fad2e1;
-  background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
   color: black;
-  margin-top: auto; }
+  margin-top: auto;
+}
+
+/*********** STYLE TABLE SEGUNDA PÁG TRATAMIENTOS ***************/
+table {
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 210, 225, 1) 100%
+  );
+}
+
+tbody {
+  border: hidden;
+}
+
+td {
+  border: 2px solid #fad2e1;
+}
+/*********** FIN LABEL ***************/
+/*********** FIN STYLE TABLE SEGUNDA SECCION TRATAMIENTOS ***************/
+
+
+/***************************** CLASSES *******************************/
+
+/* CLASES SEGUNDA SECCION TRATAMIENTOS */
+.facialItem {
+  list-style: url("https://img.icons8.com/external-victoruler-flat-victoruler/17/000000/external-skincare-beauty-cosmetics-victoruler-flat-victoruler.png");}
+    .facialItem p {
+    display: table-cell;
+    vertical-align: baseline;
+    color: #ff5ba5;}
+      .facialItem p:hover {
+      color: #ff1e95;}
+
+.nutricionItem {
+  list-style: url("https://img.icons8.com/color/17/000000/strawberry.png");}
+    .nutricionItem p {
+    display: table-cell;
+    vertical-align: baseline;
+    color: #ff5ba5;}
+      .nutricionItem p:hover {
+      color: #ff1e95;}
+
+.depiItem {
+  list-style: url("https://img.icons8.com/dusk/17/000000/waxing.png");}
+    .depiItem p {
+    display: table-cell;
+    vertical-align: baseline;
+    color: #ff5ba5;}
+      .depiItem p:hover {
+      color: #ff1e95;}
+/* CLASES SEGUNDA SECCION TRATAMIENTOS */
 
 .centrado {
-  text-align: center; }
+  text-align: center;
+}
 
 .negrita {
-  font-weight: bold; }
-
-/*---------------------------------- CSS PARA BS ------------------------------------------------ */
-.container-xxl {
-  padding: 0; }
-
-.colorTitleCarrusel {
-  color: #ff5ba5;
-  font-weight: 900;
-  font-size: 155%;
-  margin-bottom: 0px;
-  -webkit-text-stroke: .8px #fff;
-  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5; }
-  
-
-.w-100 {
-  height: 230px; }
-
-.translate-middle {
-  transform: translate(-50%, 0%) !important; }
-
-.colorSubitleCarrusel {
-  color: #ff5ba5;
-  font-weight: 900;
-  font-size: 80%;
-  -webkit-text-stroke: .5px #fff; 
-  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;}
-
-.imgCard {
-  width: 100%; }
-
-.navColor {
-  background-color: #fad2e1 !important; }
+  font-weight: bold;
+}
 
 .bg-rosa {
-  background-color: #ff5ba5 !important; }
-.text-rosa{
+  background-color: #ff5ba5 !important;
+}
+
+.text-rosa {
   color: #ff5ba5;
 }
 
-/*........................... CLASES ESTILOS...................................... */
+.imgCard {
+  width: 100%;
+}
+
+.navColor {
+  background-color: #fad2e1 !important;
+}
+
 .imgFloat {
-  float: right; }
+  float: right;
+}
 
 .responsiveIframe {
   position: relative;
-  padding-top: 56.25%; }
+  padding-top: 56.25%;
+}
 
 .responsiveIframe__iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+}
 
 .imgRedonda {
   width: 60%;
   height: 60%;
-  /*  border-radius:100%; */
   -webkit-clip-path: circle(70% at 70% 20%);
-  clip-path: circle(70% at 70% 20%); }
+  clip-path: circle(70% at 70% 20%);
+}
 
 .mgPorNav {
-  margin-top: 75px; }
+  margin-top: 75px;
+}
 
 .borderForm {
-  border: solid 3px #ff5ba5; }
+  border: solid 3px #ff5ba5;
+}
 
 .textareaBox {
-  width: 90%; }
+  width: 90%;
+}
 
-.mgProductos{
+.mgProductos {
   margin-left: 0%;
   margin-right: 0%;
   padding-left: 0%;
   padding-right: 0%;
 }
 
+
+/*---------------------------------- CSS PARA BS ------------------------------------------------ */
+.container-xxl {
+  padding: 0;
+}
+
+.colorTitleCarrusel {
+  color: #ff5ba5;
+  font-weight: 900;
+  font-size: 155%;
+  margin-bottom: 0px;
+  -webkit-text-stroke: 0.8px #fff;
+  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;
+}
+
+.w-100 {
+  height: 230px;
+}
+
+.translate-middle {
+  transform: translate(-50%, 0%) !important;
+}
+
+.colorSubitleCarrusel {
+  color: #ff5ba5;
+  font-weight: 900;
+  font-size: 80%;
+  -webkit-text-stroke: 0.5px #fff;
+  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;
+}
+
+/*........................... CLASES ESTILOS...................................... */
+
 /*------------------------------------ TABLET-------------------------------------------*/
 @media (min-width: 600px) and (max-width: 1024px) {
-  body {
-    background-color: green; }
+  
   nav {
     background-color: #fad2e1;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    font-weight: bold; }
-  table {
-    border-collapse: collapse;
-    width: 550px;
-    margin-left: 50px;
-    border: 3px solid #ff5ba5; }
-    .w-100 {
-      height: 400px; }
+    font-weight: bold;
+  }
+
+  .w-100 {
+    height: 400px;
+  }
   .colorTitleCarrusel {
     color: #fad2e1;
     font-weight: 900;
-    font-size: 280%; }
+    font-size: 280%;
+  }
   .colorSubitleCarrusel {
     color: #fad2e1;
-    font-weight: 900; }
+    font-weight: 900;
+  }
   .translate-middle {
-    transform: translate(-50%, -50%) !important; }
+    transform: translate(-50%, -50%) !important;
+  }
   .imgRedonda {
     width: 20%;
     height: 20%;
     -webkit-clip-path: circle(70% at 70% 20%);
-    clip-path: circle(70% at 70% 20%); }
-
-    .mgProductos{
-      margin-left: 0%;
-      margin-right: 0%;
-    }
+    clip-path: circle(70% at 70% 20%);
   }
+
+  .mgProductos {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+}
 
 /*------------------------------------ DESKTOP ---------------------------------------------------*/
 @media (min-width: 1025px) {
-  body {
-    background-color: blue; }
+  
   nav {
     background-color: #fad2e1;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;
-    font-weight: bold; }
-  table {
-    border-collapse: collapse;
-    width: 550px;
-    border: 3px solid #ff5ba5; }
+    font-weight: bold;
+  }
+
   .w-100 {
-    height: 500px; }
+    height: 500px;
+  }
   .colorTitleCarrusel {
     color: #fad2e1;
     font-weight: 900;
-    font-size: 280%; }
+    font-size: 280%;
+  }
   .colorSubitleCarrusel {
     color: #fad2e1;
-    font-weight: 900; }
+    font-weight: 900;
+  }
   .translate-middle {
-    transform: translate(-50%, -50%) !important; }
+    transform: translate(-50%, -50%) !important;
+  }
   .imgRedonda {
     width: 20%;
     height: 20%;
     -webkit-clip-path: circle(70% at 70% 20%);
-    clip-path: circle(70% at 70% 20%); } 
-  .mgProductos{
-      margin-left: 10%;
-      margin-right: 10%;
-    }
+    clip-path: circle(70% at 70% 20%);
   }
+  .mgProductos {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 
 /* ---------------------------------------- ANIMATION ------------------------------------ */
 .shadow-drop-tr {
-  -webkit-animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  -webkit-animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
 @-webkit-keyframes shadow-drop-tr {
   0% {
     -webkit-box-shadow: 0 0 0 0 transparent;
-    box-shadow: 0 0 0 0 transparent; }
+    box-shadow: 0 0 0 0 transparent;
+  }
   100% {
     -webkit-box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
-    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35); } }
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
 
 @keyframes shadow-drop-tr {
   0% {
     -webkit-box-shadow: 0 0 0 0 transparent;
-    box-shadow: 0 0 0 0 transparent; }
+    box-shadow: 0 0 0 0 transparent;
+  }
   100% {
     -webkit-box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
-    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35); } }
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.shadow-drop-2-tr {
+  animation: shadow-drop-2-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes shadow-drop-2-tr {
+  0% {
+    transform: translateZ(0) translateX(0) translateY(0);
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    transform: translateZ(50px) translateX(-12px) translateY(12px);
+    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
 
 /* -----------------------------------TRANSICION */
 /* ROTACION----------------------------------- */
-.trans-foot:hover {
-  transition: 2s;
-  font-size: 2rem;
-  transform: rotate(360deg); }
 
 .sCale:hover {
-  transform: scale(1.1, 1.1); }
+  transform: scale(1.1, 1.1);
+}
