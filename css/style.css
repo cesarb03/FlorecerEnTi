@@ -77,9 +77,9 @@ td {
 /*********** FIN STYLE TABLE SEGUNDA SECCION TRATAMIENTOS ***************/
 
 
-/***************************** CLASSES *******************************/
+/*################################# INICIO CLASSES ###########################################*/
 
-/* CLASES SEGUNDA SECCION TRATAMIENTOS */
+/* CLASES PÁG TRATAMIENTOS */
 .facialItem {
   list-style: url("https://img.icons8.com/external-victoruler-flat-victoruler/17/000000/external-skincare-beauty-cosmetics-victoruler-flat-victoruler.png");}
     .facialItem p {
@@ -106,7 +106,7 @@ td {
     color: #ff5ba5;}
       .depiItem p:hover {
       color: #ff1e95;}
-/* CLASES SEGUNDA SECCION TRATAMIENTOS */
+/* FIN CLASES PÁG TRATAMIENTOS */
 
 .centrado {
   text-align: center;
@@ -136,6 +136,7 @@ td {
   float: right;
 }
 
+/* MAP INDEX */
 .responsiveIframe {
   position: relative;
   padding-top: 56.25%;
@@ -148,6 +149,7 @@ td {
   width: 100%;
   height: 100%;
 }
+/* FIN MAP INDEX */
 
 .imgRedonda {
   width: 60%;
@@ -174,13 +176,6 @@ td {
   padding-left: 0%;
   padding-right: 0%;
 }
-
-
-/*---------------------------------- CSS PARA BS ------------------------------------------------ */
-.container-xxl {
-  padding: 0;
-}
-
 .colorTitleCarrusel {
   color: #ff5ba5;
   font-weight: 900;
@@ -188,6 +183,21 @@ td {
   margin-bottom: 0px;
   -webkit-text-stroke: 0.8px #fff;
   text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;
+}
+.colorSubitleCarrusel {
+  color: #ff5ba5;
+  font-weight: 900;
+  font-size: 80%;
+  -webkit-text-stroke: 0.5px #fff;
+  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;
+}
+
+/*################################# FIN CLASSES ###########################################*/
+
+
+/* ########### INICIO BOOTSRAP MODIFICATORS########### */
+.container-xxl {
+  padding: 0;
 }
 
 .w-100 {
@@ -198,17 +208,10 @@ td {
   transform: translate(-50%, 0%) !important;
 }
 
-.colorSubitleCarrusel {
-  color: #ff5ba5;
-  font-weight: 900;
-  font-size: 80%;
-  -webkit-text-stroke: 0.5px #fff;
-  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;
-}
+/* ########### FIN BOOTSRAP MODIFICATORS########### */
 
-/*........................... CLASES ESTILOS...................................... */
 
-/*------------------------------------ TABLET-------------------------------------------*/
+/* ########### INICIO TABLE QUERY ########### */
 @media (min-width: 600px) and (max-width: 1024px) {
   
   nav {
@@ -247,7 +250,9 @@ td {
   }
 }
 
-/*------------------------------------ DESKTOP ---------------------------------------------------*/
+/* ########### FIN TABLET QUERY ########### */
+
+/* ########### INICIO DESKTOP QUERY ########### */
 @media (min-width: 1025px) {
   
   nav {
@@ -284,8 +289,13 @@ td {
     margin-right: 10%;
   }
 }
+/* ########### FIN DESKTOP QUERY########### */
 
-/* ---------------------------------------- ANIMATION ------------------------------------ */
+
+/* ######################################## */
+/* ########### ANIMATIONS START ########### */
+/* ######################################## */
+
 .shadow-drop-tr {
   -webkit-animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
     both;
@@ -313,24 +323,14 @@ td {
     box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
   }
 }
+/* ############ FIN ANIMATIONS ############## */
 
-.shadow-drop-2-tr {
-  animation: shadow-drop-2-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes shadow-drop-2-tr {
-  0% {
-    transform: translateZ(0) translateX(0) translateY(0);
-    box-shadow: 0 0 0 0 transparent;
-  }
-  100% {
-    transform: translateZ(50px) translateX(-12px) translateY(12px);
-    box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
-  }
-}
-
-/* -----------------------------------TRANSICION */
-/* ROTACION----------------------------------- */
+/* ######################################## */
+/* ########### TRANSITIONS START ########### */
+/* ######################################## */
 
 .sCale:hover {
   transform: scale(1.1, 1.1);
 }
+
+/* ############ FIN TRANSITIONS ############## */
