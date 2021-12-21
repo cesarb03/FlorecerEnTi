@@ -1,32 +1,42 @@
-  /* <!-- FUENTE DE GOOGLE FONT --> */
-  @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
-  /* ---------------------------------- */
+/* <!-- FUENTE DE GOOGLE FONT --> */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+/* ---------------------------------- */
+
+
+/* ############################################ */
+/* ########### GENERAL STYLES START ########### */
+/* ############################################ */
+
 
 * {
   margin: 0;
   padding: 0;
 }
 
-/*.................................... ETIQUETAS ESTILOS ......................................................*/
-html{
+/* ***************************** LABELS *******************************/
+html {
   height: 100%;
 }
+
 body {
-  background-image: url(../image/pink_rice.png);  
+  background-image: url(../image/pink_rice.png);
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1{
+  /* text-shadow: #ff5ba5 0.1em -0.1em 0.2em; */
+  text-shadow: #ff5ba5 2px -1px 3px;
+}
+
+h1, h2, h3, h4 {
   font-family: "Fjalla One", sans-serif;
   color: #ff5ba5;
 }
-h3{
+
+h3 {
   font-size: 120%;
 }
 
@@ -35,110 +45,175 @@ p {
   font-size: 90%;
   font-weight: bold;
   letter-spacing: 1px;
-  font-family: 'Patrick Hand', cursive;
-}
-
-table {
-  border-collapse: collapse;
-}
-tr {
-  background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
-  border: 3px solid #ff5ba5;
-}
-th {
-  border: 3px solid #ff5ba5;
-}
-td {
-  border: 3px solid #ff5ba5;
+  font-family: "Patrick Hand", cursive;
 }
 
 footer {
   text-align: center;
   background-color: #fad2e1;
-  background-image: linear-gradient(#f9d1b7 0%, #f894a4 74%);
   color: black;
   margin-top: auto;
 }
 
-.centrado{
+/*********** STYLE TABLE SEGUNDA PÁG TRATAMIENTOS ***************/
+table {
+  border-radius: 20px;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(250, 210, 225, 1) 100%
+  );
+}
+
+tbody {
+  border: hidden;
+}
+
+td {
+  border: 2px solid #fad2e1;
+}
+/*********** FIN LABEL ***************/
+/*********** FIN STYLE TABLE SEGUNDA SECCION TRATAMIENTOS ***************/
+
+
+/*################################# INICIO CLASSES ###########################################*/
+
+/* CLASES PÁG TRATAMIENTOS */
+.facialItem {
+  list-style: url("https://img.icons8.com/external-victoruler-flat-victoruler/17/000000/external-skincare-beauty-cosmetics-victoruler-flat-victoruler.png");}
+    .facialItem p {
+    display: table-cell;
+    vertical-align: baseline;
+    color: #ff5ba5;}
+      .facialItem p:hover {
+      color: #ff1e95;}
+
+.nutricionItem {
+  list-style: url("https://img.icons8.com/color/17/000000/strawberry.png");}
+    .nutricionItem p {
+    display: table-cell;
+    vertical-align: baseline;
+    color: #ff5ba5;}
+      .nutricionItem p:hover {
+      color: #ff1e95;}
+
+.depiItem {
+  list-style: url("https://img.icons8.com/dusk/17/000000/waxing.png");}
+    .depiItem p {
+    display: table-cell;
+    vertical-align: baseline;
+    color: #ff5ba5;}
+      .depiItem p:hover {
+      color: #ff1e95;}
+/* FIN CLASES PÁG TRATAMIENTOS */
+
+.centrado {
   text-align: center;
 }
-.negrita{
+
+.negrita {
   font-weight: bold;
 }
 
-/*---------------------------------- CSS PARA BS ------------------------------------------------ */
-.container-xxl{ 
-  padding: 0;
-}
-.colorTitleCarrusel {
-  color: #ff5ba5;
-  font-weight: 900;
-  font-size: 155%;
-  margin-bottom: 0px;
-  -webkit-text-stroke: .8px #fff;
+.bg-rosa {
+  background-color: #ff5ba5 !important;
 }
 
-.w-100{
-  height: 230px;
-  }
-
-.translate-middle {
-  transform: translate(-50%, -0%) !important;
-}
-.colorSubitleCarrusel {
+.text-rosa {
   color: #ff5ba5;
-  font-weight: 900;
-  font-size: 80%;
-  -webkit-text-stroke: .5px #fff;
 }
-.imgCard{
+
+.imgCard {
   width: 100%;
 }
-.navColor{
-  background-color: #fad2e1!important;
-}
-.bg-rosa{
-  background-color: #ff5ba5!important;
-}
 
-/*........................... CLASES ESTILOS...................................... */
+.navColor {
+  background-color: #fad2e1 !important;
+}
 
 .imgFloat {
   float: right;
 }
-.responsiveIframe{
+
+/* MAP INDEX */
+.responsiveIframe {
   position: relative;
   padding-top: 56.25%;
 }
-.responsiveIframe__iframe{
+
+.responsiveIframe__iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
+/* FIN MAP INDEX */
+
 .imgRedonda {
-  width:60%;
-  height:60%;
- /*  border-radius:100%; */
- -webkit-clip-path: circle(70% at 70% 20%);
- clip-path: circle(70% at 70% 20%);
+  width: 60%;
+  height: 60%;
+  -webkit-clip-path: circle(70% at 70% 20%);
+  clip-path: circle(70% at 70% 20%);
 }
-.mgPorNav{
-  margin-top: 91px;
+
+.mgPorNav {
+  margin-top: 75px;
 }
-.borderForm{
+
+.borderForm {
   border: solid 3px #ff5ba5;
 }
+
 .textareaBox {
   width: 90%;
 }
-/*------------------------------------ TABLET-------------------------------------------*/
+
+.mgProductos {
+  margin-left: 0%;
+  margin-right: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+.colorTitleCarrusel {
+  color: #ff5ba5;
+  font-weight: 900;
+  font-size: 155%;
+  margin-bottom: 0px;
+  -webkit-text-stroke: 0.8px #fff;
+  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;
+}
+.colorSubitleCarrusel {
+  color: #ff5ba5;
+  font-weight: 900;
+  font-size: 80%;
+  -webkit-text-stroke: 0.5px #fff;
+  text-shadow: 1px 1px 2px #ff5ba5, 0px 0px 2px #ff5ba5, -1px -1px 2px #ff5ba5;
+}
+
+/*################################# FIN CLASSES ###########################################*/
+
+
+/* ########### INICIO BOOTSRAP MODIFICATORS########### */
+.container-xxl {
+  padding: 0;
+}
+
+.w-100 {
+  height: 230px;
+}
+
+.translate-middle {
+  transform: translate(-50%, 0%) !important;
+}
+
+/* ########### FIN BOOTSRAP MODIFICATORS########### */
+
+
+/* ########### INICIO TABLE QUERY ########### */
 @media (min-width: 600px) and (max-width: 1024px) {
-  body {
-    background-color: green;
-  }
+  
   nav {
     background-color: #fad2e1;
     display: flex;
@@ -146,45 +221,40 @@ footer {
     justify-content: space-around;
     font-weight: bold;
   }
-  table {
-    border-collapse: collapse;
-    width: 550px;
-    margin-left: 50px;
-    border: 3px solid #ff5ba5;
+
+  .w-100 {
+    height: 400px;
   }
-  .btn-wsp{
-    width:63px;
-    height:63px;
-    line-height: 66px;
-}
-.colorTitleCarrusel {
-  color: #fad2e1;
-  font-weight: 900;
-  font-size: 280%;
-}
-.colorSubitleCarrusel {
-  color: #fad2e1;
-  font-weight: 900;
+  .colorTitleCarrusel {
+    color: #fad2e1;
+    font-weight: 900;
+    font-size: 280%;
+  }
+  .colorSubitleCarrusel {
+    color: #fad2e1;
+    font-weight: 900;
+  }
+  .translate-middle {
+    transform: translate(-50%, -50%) !important;
+  }
+  .imgRedonda {
+    width: 20%;
+    height: 20%;
+    -webkit-clip-path: circle(70% at 70% 20%);
+    clip-path: circle(70% at 70% 20%);
+  }
+
+  .mgProductos {
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }
 
-.translate-middle {
-  transform: translate(-50%, -50%) !important;
-}
-.imgRedonda {
-  width:20%;
-  height:20%;
-  -webkit-clip-path: circle(70% at 70% 20%);
-  clip-path: circle(70% at 70% 20%);
-}
-}
+/* ########### FIN TABLET QUERY ########### */
 
-
-/*------------------------------------ DESKTOP ---------------------------------------------------*/
+/* ########### INICIO DESKTOP QUERY ########### */
 @media (min-width: 1025px) {
-  body {
-    background-color: blue;
-  }
-
+  
   nav {
     background-color: #fad2e1;
     display: flex;
@@ -192,35 +262,39 @@ footer {
     justify-content: space-around;
     font-weight: bold;
   }
-  table {
-    border-collapse: collapse;
-    width: 550px;
-    border: 3px solid #ff5ba5;
-  }
 
-.w-100{
-height: 500px;
+  .w-100 {
+    height: 500px;
+  }
+  .colorTitleCarrusel {
+    color: #fad2e1;
+    font-weight: 900;
+    font-size: 280%;
+  }
+  .colorSubitleCarrusel {
+    color: #fad2e1;
+    font-weight: 900;
+  }
+  .translate-middle {
+    transform: translate(-50%, -50%) !important;
+  }
+  .imgRedonda {
+    width: 20%;
+    height: 20%;
+    -webkit-clip-path: circle(70% at 70% 20%);
+    clip-path: circle(70% at 70% 20%);
+  }
+  .mgProductos {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
-.colorTitleCarrusel {
-  color: #fad2e1;
-  font-weight: 900;
-  font-size: 280%;
-}
-.colorSubitleCarrusel {
-  color: #fad2e1;
-  font-weight: 900;
-}
-.translate-middle {
-  transform: translate(-50%, -50%) !important;
-}
-.imgRedonda {
-  width:20%;
-  height:20%;
-  -webkit-clip-path: circle(70% at 70% 20%);
-  clip-path: circle(70% at 70% 20%);
-}
-}
-/* ---------------------------------------- ANIMATION ------------------------------------ */
+/* ########### FIN DESKTOP QUERY########### */
+
+
+/* ######################################## */
+/* ########### ANIMATIONS START ########### */
+/* ######################################## */
 
 .shadow-drop-tr {
   -webkit-animation: shadow-drop-tr 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
@@ -238,6 +312,7 @@ height: 500px;
     box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
   }
 }
+
 @keyframes shadow-drop-tr {
   0% {
     -webkit-box-shadow: 0 0 0 0 transparent;
@@ -248,13 +323,14 @@ height: 500px;
     box-shadow: 12px -12px 20px -12px rgba(0, 0, 0, 0.35);
   }
 }
+/* ############ FIN ANIMATIONS ############## */
 
-/* -----------------------------------TRANSICION */ /* ROTACION----------------------------------- */
-.trans-foot:hover {
-  transition: 2s;
-  font-size: 2rem;
-  transform: rotate(360deg);
-}
+/* ######################################## */
+/* ########### TRANSITIONS START ########### */
+/* ######################################## */
+
 .sCale:hover {
   transform: scale(1.1, 1.1);
 }
+
+/* ############ FIN TRANSITIONS ############## */
